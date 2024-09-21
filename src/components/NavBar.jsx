@@ -1,0 +1,19 @@
+// Using link instead of href is better with React because
+// it does not cause a whole page reload it just refreshed that
+// part of the application. it behaves like an anchor tag but without the reload
+
+
+import { Link } from 'react-router-dom';
+
+function NavBar() {
+  return (
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+      </ul>
+    </nav>
+  );
+}
+
+export default NavBar;
