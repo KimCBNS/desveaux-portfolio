@@ -1,43 +1,47 @@
 import React from "react";
 
-import PortfolioCard from "../components/PortfolioCard";
+// use a card building component
+import PortfolioCard from "../components/PortfolioCard";  
+
+
 // Example array of project data
 const projects = [
   {
-    title: "Project One",
-    image: "https://via.placeholder.com/150",  // Placeholder image
-    github: "https://github.com/user/project-one",
-    deployed: "https://project-one.com"
+    title: "Weather Guide",
+    image: "/assets/WeatherDash.png",  
+    github: "https://github.com/KimCBNS/WeatherGuides",
+    deployed: "https://kimcbns.github.io/WeatherGuides/"
   },
   {
-    title: "Project Two",
-    image: "https://via.placeholder.com/150",
-    github: "https://github.com/user/project-two",
-    deployed: "https://project-two.com"
+    title: "Social Media DB",
+    image: "/assets/Insomnia.png",
+    github: "https://github.com/KimCBNS/social-app",
+    deployed: "https://www.loom.com/share/80a6c507f51e4397a91eb39f25af96f6"
   },
   {
-    title: "Project Three",
-    image: "https://via.placeholder.com/150",
-    github: "https://github.com/user/project-three",
-    deployed: "https://project-three.com"
+    title: "Lyric Swap",
+    image: "/assets/LyricSwap3.png",
+    github: "https://github.com/lukemaines/lyric-swap",
+    deployed: " https://lukemaines.github.io/lyric-swap/"
   },
   {
-    title: "Project Four",
-    image: "https://via.placeholder.com/150",
-    github: "https://github.com/user/project-four",
-    deployed: "https://project-four.com"
+    title: "Note Taker",
+    image: "/assets/NoteTaker1.png",
+    github: "https://github.com/KimCBNS/note-taker",
+    deployed: "https://note-taker-h4t5.onrender.com/"
   },
   {
-    title: "Project Five",
-    image: "https://via.placeholder.com/150",
-    github: "https://github.com/user/project-five",
-    deployed: "https://project-five.com"
+    title: "Tech Blog",
+    image: "/assets/TechBlog.png",
+    github: "https://github.com/KimCBNS/tech-blog",
+    deployed: "https://tech-blog-uvhf.onrender.com/"
   },
   {
-    title: "Project Six",
-    image: "https://via.placeholder.com/150",
-    github: "https://github.com/user/project-six",
-    deployed: "https://project-six.com"
+    title: "SVG Designer",
+    
+    image: "/public/assets/Insomnia.png",
+    github: " https://github.com/KimCBNS/oop-svg-designer",
+    deployed: "https://drive.google.com/file/d/1Aral2EH9Wz42jGT7vVThucuB7pQVxr-Z/"
   }
 ];
 
