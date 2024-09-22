@@ -3,17 +3,72 @@
 // part of the application. it behaves like an anchor tag but without the reload
 
 import React from 'react'; // Import React
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function NavBar() {
+  // to know which link is clicked and active
+  const location = useLocation();
+
+<nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div className="container-fluid">
+    {/* Your content here */}
+  </div>
+</nav>
+
+
+
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
-      </ul>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div className="container-fluid">
+      <Link className="navbar-brand" to="/">Kim Desveaux</Link>
+      <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+                to="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${location.pathname === '/portfolio' ? 'active' : ''}`}
+                to="/portfolio"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${location.pathname === '/contact' ? 'active' : ''}`}
+                to="/contact"
+              >
+                Contact
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${location.pathname === '/resume' ? 'active' : ''}`}
+                to="/resume"
+              >
+                Resume
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 }

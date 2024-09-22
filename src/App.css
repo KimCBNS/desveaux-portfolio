@@ -1,40 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  background-color: whitesmoke;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-nav {
-  background-color: #333;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style: none;
+html, body {
   display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  bottom: 0;
+  height: 100%;
 }
+
+#root {
+  min-height: 100vh;
+  background-color: whitesmoke;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+
+}
+
+
+/* Flex container to stretch content */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  width: 100%;
+}
+
+/* Make the content section flexible */
+.content {
+  flex-grow: 1; /* This makes the content area take up remaining space */
+  padding: 20px; /* Optional padding for the content */
+  width: 100%;
+}
+
+
+
+
+/* NavBar.css */
+.navbar {
+  background-color: #f8f9fa; /* Custom background color */
+}
+
+.navbar-nav .nav-link {
+  color: #000; /* Default link color */
+}
+
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Active link color */
+}
+
+/* You can also add hover effects or other styles */
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
+}
+
+
 
 
 /* Portfolio Card Styles */
@@ -82,4 +111,23 @@ footer {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
+}
+
+
+
+.footer {
+  background-color: #333; /* Change this to your desired footer background color */
+  color: white;
+  padding: 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+}
+
+.social-icon {
+  width: 30px; /* Adjust icon size as needed */
+  height: auto; /* Maintain aspect ratio */
 }
