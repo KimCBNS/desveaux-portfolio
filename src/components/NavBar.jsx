@@ -2,7 +2,7 @@
 // it does not cause a whole page reload it just refreshed that
 // part of the application. it behaves like an anchor tag but without the reload
 
-
+import React from 'react'; // Import React
 import { Link } from 'react-router-dom';
 
 function NavBar() {

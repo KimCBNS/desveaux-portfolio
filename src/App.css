@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: whitesmoke;
 }
 
 body {
@@ -49,6 +50,7 @@ footer {
   padding: 1rem;
   text-align: center;
   align-items: center;
+  margin: 5px;
 }
 
 .card-image {
@@ -69,4 +71,15 @@ footer {
 .card-image:hover {
   /* Optional: Add a scaling effect on hover */
   transform: scale(1.05); /* Slightly enlarge the image when hovered */
+}
+
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }

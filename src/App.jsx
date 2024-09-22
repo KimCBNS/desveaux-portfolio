@@ -27,7 +27,6 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
 
-        <JSXVariables />
         {/* Footer */}
         <footer>
           <p>© 2024 My Portfolio</p>

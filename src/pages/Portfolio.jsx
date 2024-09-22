@@ -39,7 +39,7 @@ const projects = [
   {
     title: "SVG Designer",
     
-    image: "/public/assets/Insomnia.png",
+    image: "/assets/Insomnia.png",
     github: " https://github.com/KimCBNS/oop-svg-designer",
     deployed: "https://drive.google.com/file/d/1Aral2EH9Wz42jGT7vVThucuB7pQVxr-Z/"
   }
