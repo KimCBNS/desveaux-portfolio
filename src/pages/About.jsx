@@ -1,12 +1,30 @@
 import React from 'react';
 
-function About() {
+// use a card building component
+import ProfileCard from "../components/ProfileCard";  
+
+
+// Example array of project data
+const profile = [
+  {
+    title: "Kim Desveaux",
+    image: "/assets/IMG_0211.jpeg", 
+    text: "I am a developer and I would love to help you with your next project."
+   },
+];
+
+function Profile() {
   return (
-    <div>
+    <div className="portfolio">
       <h1>About Me</h1>
-      <p>This is where I will tell you more about myself and my background.</p>
+      <div className="portfolio-cards">
+        {/* Using map() to render PortfolioCard for each project */}
+        {profile.map((profile, index) => (
+          <ProfileCard profile={profile} key={index} />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default About;
+export default Profile;
